@@ -388,7 +388,7 @@ workflow.onComplete {
 
 }
 
-
+//MOVED
 def nfcoreHeader() {
     // Log colors ANSI codes
     c_black = params.monochrome_logs ? '' : "\033[0;30m";
@@ -412,6 +412,7 @@ def nfcoreHeader() {
     """.stripIndent()
 }
 
+//MOVED
 def checkHostname() {
     def c_reset = params.monochrome_logs ? '' : "\033[0m"
     def c_white = params.monochrome_logs ? '' : "\033[0;37m"
